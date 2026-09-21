@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Velvet Café</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5eee6;
+            color: #3b2720;
+        }
+
+        /* Navigation */
+        nav {
+            background: #3b2720;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 70px 20px 50px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0 0 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #3b2720;
+            color: white;
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        /* Menu */
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .card .emoji {
+            font-size: 40px;
+        }
+
+        .card h3 {
+            margin: 12px 0 8px;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* About */
+        #about p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* Contact */
+        #contact p {
+            font-size: 18px;
+        }
+
+        /* Footer */
+        footer {
+            background: #3b2720;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 13px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home -->
+    <div class="hero" id="home">
+        <h1>Velvet Café ☕</h1>
+
+        <p>Coffee, conversations & comfort.</p>
+
+        <a class="button" href="#menu">Explore Menu</a>
+    </div>
+
+    <!-- Menu -->
+    <section id="menu">
+        <h2>Our Menu 🍰</h2>
+
+        <div class="menu">
+
+            <div class="card">
+                <div class="emoji">☕</div>
+                <h3>Cappuccino</h3>
+                <p>Rich and creamy coffee.</p>
+                <div class="price">₹120</div>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🍰</div>
+                <h3>Chocolate Cake</h3>
+                <p>Soft, delicious chocolate cake.</p>
+                <div class="price">₹150</div>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🥪</div>
+                <h3>Grilled Sandwich</h3>
+                <p>Crispy, cheesy and filling.</p>
+                <div class="price">₹100</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Us 🤎</h2>
+
+        <p>
+            Welcome to Velvet Café, a cozy place to relax,
+            enjoy delicious food and spend quality time
+            with friends and family.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us 📍</h2>
+
+        <p>📍 Azamgarh</p>
+        <p>📞 0000000000</p>
+
+        <br>
+
+        <a class="button" href="tel:0000000000">
+            Call Us
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Velvet Café</p>
+        <p>Made with ❤️</p>
+    </footer>
+
+</body>
+</html>
